@@ -1,0 +1,332 @@
+{
+  "nodes": [
+    {
+      "id": "calibre_perc",
+      "label": "Calibre PERC",
+      "file_type": "paper",
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "id": "erc",
+      "label": "Electrical Rule Check (ERC)",
+      "file_type": "paper",
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "id": "esd",
+      "label": "ESD Protection",
+      "file_type": "paper",
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "id": "advanced_erc",
+      "label": "Advanced ERC",
+      "file_type": "paper",
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "id": "mosfet",
+      "label": "MOSFET",
+      "file_type": "paper",
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "id": "floating_gate",
+      "label": "Floating Gate",
+      "file_type": "paper",
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "id": "level_shifter",
+      "label": "Level Shifter",
+      "file_type": "paper",
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "id": "power_domain",
+      "label": "Power Domain",
+      "file_type": "paper",
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "id": "bipolar_protection",
+      "label": "Bipolar Protection",
+      "file_type": "paper",
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "id": "diode_protection",
+      "label": "Diode Protection",
+      "file_type": "paper",
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "id": "input_pad",
+      "label": "Input Pad Protection",
+      "file_type": "paper",
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "id": "power_supply_pad",
+      "label": "Power Supply Pad",
+      "file_type": "paper",
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "id": "io_pad",
+      "label": "I/O Pad Protection",
+      "file_type": "paper",
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "id": "capacitor",
+      "label": "Capacitor Protection",
+      "file_type": "paper",
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "id": "bulk_connection",
+      "label": "Bulk Connection",
+      "file_type": "paper",
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "id": "gate_ground_nmos",
+      "label": "Gate-Ground NMOS",
+      "file_type": "paper",
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "id": "cell_tie_off",
+      "label": "Cell Tie-off",
+      "file_type": "paper",
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "id": "back_to_back_diodes",
+      "label": "Back-to-Back Diodes",
+      "file_type": "paper",
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "id": "big_buffer",
+      "label": "Big Buffers",
+      "file_type": "paper",
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "id": "stacked_nfet",
+      "label": "Stacked NFETs",
+      "file_type": "paper",
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "id": "low_voltage_mos",
+      "label": "Low Voltage MOS",
+      "file_type": "paper",
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    }
+  ],
+  "edges": [
+    {
+      "source": "calibre_perc",
+      "target": "erc",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "source": "calibre_perc",
+      "target": "esd",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "source": "erc",
+      "target": "advanced_erc",
+      "relation": "includes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "source": "advanced_erc",
+      "target": "floating_gate",
+      "relation": "checks",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "source": "advanced_erc",
+      "target": "bulk_connection",
+      "relation": "checks",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "source": "advanced_erc",
+      "target": "level_shifter",
+      "relation": "checks",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "source": "advanced_erc",
+      "target": "power_domain",
+      "relation": "analyzes",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "source": "advanced_erc",
+      "target": "bipolar_protection",
+      "relation": "checks",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "source": "esd",
+      "target": "input_pad",
+      "relation": "protects",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "source": "esd",
+      "target": "power_supply_pad",
+      "relation": "protects",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "source": "esd",
+      "target": "io_pad",
+      "relation": "protects",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "source": "esd",
+      "target": "diode_protection",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "source": "mosfet",
+      "target": "floating_gate",
+      "relation": "has_component",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "source": "mosfet",
+      "target": "bulk_connection",
+      "relation": "requires",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "source": "level_shifter",
+      "target": "power_domain",
+      "relation": "connects",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "source": "gate_ground_nmos",
+      "target": "esd",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "source": "back_to_back_diodes",
+      "target": "esd",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "source": "stacked_nfet",
+      "target": "esd",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "source": "big_buffer",
+      "target": "esd",
+      "relation": "requires",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "source": "low_voltage_mos",
+      "target": "esd",
+      "relation": "requires",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "advanced_erc_checks",
+      "label": "Advanced ERC Check Suite",
+      "nodes": [
+        "floating_gate",
+        "bulk_connection",
+        "level_shifter",
+        "power_domain",
+        "bipolar_protection",
+        "cell_tie_off",
+        "capacitor"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    },
+    {
+      "id": "esd_protection_suite",
+      "label": "ESD Protection Suite",
+      "nodes": [
+        "input_pad",
+        "power_supply_pad",
+        "io_pad",
+        "diode_protection",
+        "gate_ground_nmos",
+        "back_to_back_diodes",
+        "stacked_nfet",
+        "big_buffer",
+        "low_voltage_mos"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Calibre_PERC_Catalog.pdf"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
